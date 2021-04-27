@@ -19,6 +19,7 @@
 @keinshin
 @Shivam_Patel
 @NOOBIzBack
+@sameer_795
 """
 
 
@@ -184,7 +185,7 @@ async def _(event):
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
 if BOT_MSG is None:
-    BOT_LIT = f"Hello Sir MySelf 𝐒𝐀𝐕𝐀𝐆𝐄 𝐁𝐎𝐓 Here For  {LIGHTNINGUSER}'s Protection "
+    BOT_LIT = f"Hello Sir MySelf 𝐃3𝐕𝐈𝐋 𝐁𝐎𝐓 Here For  {LIGHTNINGUSER}'s Protection "
 else:
     BOT_LIT = BOT_MSG   
 
@@ -204,10 +205,10 @@ else:
 
 LIGHTNING_BOT_PIC = os.environ.get("LIGHTNING_BOT_PIC", None)
 if LIGHTNING_BOT_PIC is None:
-    LIGHTNING_WARNING = "https://telegra.ph/file/3c449daafde7cb90e2da7.jpg"
+    LIGHTNING_WARNING = "https://telegra.ph/file/dcd029904392b0563d9a9.jpg"
 else:
     LIGHTNING_WARNING = LIGHTNING_BOT_PIC
-
+           
 
 
 
@@ -221,7 +222,7 @@ async def inline_handler(lightning):
     builder = lightning.builder
     result = None
     query = lightning.text
-    if lightning.query.user_id == bot.uid and query.startswith("**SAVAGE") or query.startswith("savage"):
+    if lightning.query.user_id == bot.uid and query.startswith("d3vil") or query.startswith("d3vil"):
         rev_text = query[::-1]
         buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
         result = builder.article(
@@ -237,7 +238,7 @@ async def inline_handler(lightning):
             text=f"**How If Face Problem \n{LIGHTNINGUSER}** \nChoose Your Problem For Help ",
             buttons=[
                 [custom.Button.inline("Help", data="what?")],
-                [Button.url("Commands Not Working🥺", "https://t.me/savage_team_userbot")],
+                [Button.url("Commands Not Working🥺", "https://t.me/D3VIL_BOT_SUPPORT")],
                 [
                     Button.url(
                 
@@ -313,7 +314,7 @@ async def lightning_pugins_query_hndlr(lightning):
            
            lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
            lightning_is_best = lightning_help_strin 
-           lightning_is_best += "\n\n**In Case Any Problem @savage_team_userbot".format(light_pulu_name)
+           lightning_is_best += "\n\n**In Case Any Problem @D3VIL_BOT_SUPPORT".format(light_pulu_name)
         
         else:
             lightning_help_strin = "Commands found in {}:\n".format(light_pulu_name)
@@ -329,17 +330,17 @@ async def lightning_pugins_query_hndlr(lightning):
     if light_pulu_name in CMD_LIST:
                 lightning_help_strin = "Commands found in {}:\n".format(light_pulu_name)
                 for i in CMD_LIST[light_pulu_name]:
-                    lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yet😅😅\n\n**Ask at @savage_team_userbot"
+                    lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yet😅😅\n\n**Ask at @D3VIL_BOT_SUPPORT"
                     lightning_help_strin += "\n    " + i
                     lightning_help_strin += "\n"
                 
     else:
-           lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yet😅😅\n\n**Ask at @savage_team_userbot"
+           lightning_help_strin  = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yet😅😅\n\n**Ask at @D3VIL_BOT_SUPPORT"
            lightning_is_best = lightning_help_strin 
-           lightning_is_best += "\n\n**In Case Any Problem @savage_team_userbot".format(light_pulu_name)
-    lightning_help_strin = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yet😅😅\n\n**Ask at @savage_team_userbot"
+           lightning_is_best += "\n\n**In Case Any Problem @D3VIL_BOT_SUPPORT".format(light_pulu_name)
+    lightning_help_strin = f"**🔺 NAME 🔺 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yet😅😅\n\n**Ask at @D3VIL_BOT_SUPPORT"
     lightning_is_best = lightning_help_strin 
-    lightning_is_best += "\n\n**In Case Any Problem @savage_team_userbot".format(light_pulu_name)    
+    lightning_is_best += "\n\n**In Case Any Problem @D3VIL_BOT_SUPPORT".format(light_pulu_name)    
     if len(lightning_is_best) >= 4096:
           keinshin = "`Wait.( ͡🔥 ͜ʖ ͡🔥)`"
           await lightning.answer(keinshin, cache_time=0, alert=True)
