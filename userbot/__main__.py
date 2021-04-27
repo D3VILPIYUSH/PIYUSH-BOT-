@@ -27,7 +27,7 @@ async def startup_log_all_done():
     try:
         await bot.send_message(
             TELE,
-            f"**𝐒𝐀𝐕𝐀𝐆𝐄 𝐁𝐎𝐓 has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
+            f"**𝐃3𝐕𝐈𝐋 𝐁𝐎𝐓 has been deployed....NOW ENJOY UR BOT ...IF U HAVE ANY PROBLEM THEN CONTACT @SAMEER_795.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of userbot**",
         )
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
@@ -58,9 +58,9 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("𝐒𝐀𝐕𝐀𝐆𝐄 𝐁𝐎𝐓 has been deployed! ")
+print("𝐃3𝐕𝐈𝐋 𝐁𝐎𝐓 has been deployed! ")
 
-print("Setting up 𝐒𝐀𝐕𝐀𝐆𝐄 𝐁𝐎𝐓")
+print("Setting up 𝐃3𝐕𝐈𝐋 𝐁𝐎𝐓")
 path = "userbot/plugins/assistant/*.py"
 files = glob.glob(path)
 for name in files:
@@ -77,11 +77,11 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
             path1 = Path(f.name)
             shortname = path1.stem
             load_assistant(shortname.replace(".py", ""))
-    sed.info("𝐒𝐀𝐕𝐀𝐆𝐄  Bot Have Been Installed Successfully !")
+    sed.info("𝐃𝐄𝐕𝐈𝐋  Bot Have Been Installed Successfully !")
 else:
-    sed.info("𝐒𝐀𝐕𝐀𝐆𝐄 BOT Has Been Installed Sucessfully !")
-    sed.info("You Can Visit @savage_team_userbot For Any Support Or Doubts")
-
+    sed.info("𝐃3𝐕𝐈𝐋 BOT Has Been Installed Sucessfully !")
+    sed.info("You Can Visit @D3VIL_BOT_SUPPORT For Any Support Or Doubts")
+               
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
