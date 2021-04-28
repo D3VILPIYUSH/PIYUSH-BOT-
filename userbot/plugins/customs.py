@@ -7,7 +7,7 @@ async def hhi(event):
     giveVar = event.text
     a = giveVar[5:6]
     if not a:
-        a = "😘"
+        a = "😊"
     b = giveVar[7:8]
     if not b:
         b = "✨"
@@ -36,7 +36,7 @@ async def hlo(event):
     giveVar = event.text
     a = giveVar[5:6]
     if not a:
-        a = "😚"
+        a = "😊"
     b = giveVar[7:8]
     if not b:
         b = "✨"
