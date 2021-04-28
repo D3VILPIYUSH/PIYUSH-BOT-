@@ -58,11 +58,11 @@ pm_caption += "✘ ΔβØỮŦ Μ¥ Ş¥ŞŦ€Μ ✘\n\n"
 pm_caption += "𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 : 1.17.5\n"
 pm_caption += "𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐂𝐇𝐀𝐍𝐍𝐄𝐋  : [𝐉𝐎𝐈𝐍](https://t.me/SAVAGE_TECHY)\n"
 pm_caption += "𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏    : [𝐉𝐎𝐈𝐍](https://t.me/D3VIL_BOT_SUPPORT)\n"
-pm_caption += "𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏       : [𝐃3𝐕𝐈𝐋](https://t.me/D3VIL_0358)\n\n"
+pm_caption += "𝐓𝐄𝐀𝐌 𝐆𝐑𝐎𝐔𝐏       : [𝐃3𝐕𝐈𝐋](https://t.me/D3VIL_0358)\n"
 pm_caption += "𝐂𝐑𝐄𝐀𝐓𝐎𝐑          ➣ [⚡𝐒𝐀𝐌𝐄𝐄𝐑⚡](@SAMEER_795)\n"                   
 pm_caption += " \n"
-pm_caption += "[ꀷꏂᖘ꒒ꂦꌩ ꌩꂦꀎꋪ ꂦꅐꈤ ꀷꏂ꒦ꀤ꒒](https:/github.com/sameerpanthi/D3VI-2.0)\n"
-
+pm_caption += "[✨ ꀷꏂᖘ꒒ꂦꌩ ꌩꂦꀎꋪ ꂦꅐꈤ ꀷ3꒦ꀤ꒒ ✨](https:/github.com/sameerpanthi/D3VIL-2.0)\n"
+                   
 @borg.on(lightning_cmd(pattern=r"alive"))
 @borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
 async def lightning(alive):
