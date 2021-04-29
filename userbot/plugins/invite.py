@@ -64,7 +64,7 @@ def user_full_name(user):
     return full_name
 
 
-@borg.on(lightning_cmd(pattern="add ?(.*)"))
+@borg.on(lightning_cmd(pattern="invite ?(.*)"))
 @borg.on(sudo_cmd(pattern="add ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
