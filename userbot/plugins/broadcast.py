@@ -14,7 +14,7 @@ from userbot.utils import lightning_cmd
 loggy_grp = Var.PRIVATE_GROUP_ID
 
 
-@borg.on(lightning_cmd(pattern="badd ?(.*)"))
+@borg.on(lightning_cmd(pattern="add ?(.*)"))
 async def _(event):
     input_chnnl = event.pattern_match.group(1)
     sed = 0
@@ -56,7 +56,7 @@ async def _(event):
         await borg.send_message(loggy_grp, f"Added {input_chnnl} To DB")
 
 
-@borg.on(lightning_cmd(pattern="brm ?(.*)"))
+@borg.on(lightning_cmd(pattern="remove ?(.*)"))
 async def _(event):
     input_chnnl = event.pattern_match.group(1)
     all_chnnl = get_all_chnnl()
@@ -193,13 +193,13 @@ async def _(event):
 CMD_HELP.update(
     {
         "broadcast": "**broadcast**\
-        \n\n**Syntax : **`.badd <channel_id>`\
+        \n\n**Syntax : **`.add <channel_id>`\
         \n**Usage :** Adds the given channel/group to database.\
-        \n\n**Syntax : **`.badd all`\
+        \n\n**Syntax : **`.add all`\
         \n**Usage :** Adds all the channel/groups to database where you are admin.\
-        \n\n**Syntax : **`.brm <channel_id>`\
+        \n\n**Syntax : **`.remove <channel_id>`\
         \n**Usage :** Removes the Specified Channel From database.\
-        \n\n**Syntax : **`.brm all`\
+        \n\n**Syntax : **`.remove all`\
         \n**Usage :** Removes Everything From DataBase.\
         \n\n**Syntax : **`.broadcast <Reply-To-Msg>`\
         \n**Usage :**  Broadcasts To All Channel in DB, Even Supports Media.\
